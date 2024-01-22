@@ -46,7 +46,7 @@ public class MyCustomSuccessHandler implements AuthenticationSuccessHandler {
 
 
 
-        response.sendRedirect("http://localhost:3000/login/success" + "?name=" + principal.getAttribute("name") + new Date().toString() + "&email=" + principal.getAttribute("email") + "&provider=" + provider);
+        response.sendRedirect("http://localhost:3000/login/success" + "?name=" + principal.getAttribute("name") + "&email=" + principal.getAttribute("email") + "&provider=" + provider + "&time=" + new Date().toString());
 
 
 
