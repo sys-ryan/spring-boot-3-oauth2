@@ -20,7 +20,7 @@ public class OAuth2ClientConfig {
                                 .requestMatchers("/oauth2/authorization/google").authenticated() // OAuth2 인증이 필요한 특정 경로
                                 .anyRequest().permitAll()) // 다른 모든 요청은 일단 허용
                 .oauth2Login(oauth2Login -> oauth2Login.successHandler(new MyCustomSuccessHandler())); // OAuth2 인증 성공 핸들러
-        //     .addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class); // JWT 인증 필터 추가
+//                .addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class); // JWT 인증 필터 추가
 
 
         return http.build();
