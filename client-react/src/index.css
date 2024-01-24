@@ -10,9 +10,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #101415;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.content-box {
+  width: 100rem;
+  overflow: clip;
+  overflow-wrap: break-word;
+  margin: auto;
+  font-size: 2rem;
+  color: lawngreen;
+}
+
+pre {
+  white-space: pre-wrap;
 }

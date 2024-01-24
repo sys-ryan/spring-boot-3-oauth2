@@ -7,6 +7,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import LoginSuccess from "./components/LoginSuccess.js";
+import AuthCallback from "./components/AuthCallback.js";
 
 const router = createBrowserRouter([
     {
@@ -14,8 +15,8 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/login/success",
-        element: <LoginSuccess />,
+        path: "/auth/callback",
+        element: <AuthCallback />,
     },
 
 ])
